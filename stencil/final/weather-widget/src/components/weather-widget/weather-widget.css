@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  background-color: var(--weather-widget-bg-color, #e60000);
+  padding: var(--weather-widget-padding);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:host(.size-regular) {
+  --weather-widget-padding: 10px;
+}
+:host(.size-slim) {
+  --weather-widget-padding: 2px;
+}
+::slotted(h1) {
+  color: white !important;
+}
